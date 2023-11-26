@@ -5,6 +5,7 @@ import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import routes from './configs/routes';
 import { AuthProvider } from './contexts/authContext';
+import { NextUIProvider } from '@nextui-org/react';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,8 +33,11 @@ function App() {
       <p className='read-the-docs'>
         Click on the Vite and React logos to learn more
       </p>
+      <h1 className='text-3xl font-bold'>Hello world!</h1>
       <AuthProvider>
-        <RouterProvider router={router} />
+        <NextUIProvider>
+          <RouterProvider router={router} />
+        </NextUIProvider>
       </AuthProvider>
     </>
   );
