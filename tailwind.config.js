@@ -11,5 +11,25 @@ export default {
     extend: {},
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      layout: {
+        // fontSize: {
+        //   tiny: '0.75rem', // text-tiny
+        //   small: '1rem', // text-small
+        //   medium: '1.125rem', // text-medium
+        //   large: '1.25', // text-large
+        // },
+        // radius: {
+        //   small: '6px', // rounded-small
+        //   medium: '10px', // rounded-medium
+        //   large: '12px', // rounded-large
+        // },
+      },
+      themes: {
+        light: {},
+        dark: {},
+      },
+    }),
+  ],
 };
