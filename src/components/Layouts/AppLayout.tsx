@@ -1,22 +1,22 @@
 import {
   Button,
-  Link,
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
 } from '@nextui-org/react';
 import hexaLogo from 'src/assets/hexa.svg';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
+
 
 function AppLayout() {
   return (
     <div className='flex flex-col w-full h-screen min-h-screen'>
       <Navbar>
         <NavbarBrand className='gap-4'>
-          <a href='/'>
+          <Link to='/'>
             <img src={hexaLogo} className='h-10' alt='Vite logo' />
-          </a>
+          </Link>
           <p className='font-bold text-inherit'>VersaLife</p>
         </NavbarBrand>
         <NavbarContent justify='end'>

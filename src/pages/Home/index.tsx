@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import viteLogo from '/vite.svg';
 import noteLogo from 'src/assets/note.svg';
 import whaleLogo from 'src/assets/whale.svg';
@@ -11,19 +12,20 @@ function HomePage() {
           Daniel
         </span>
       </p>
+      
       <div className='flex flex-wrap justify-between gap-x-unit-32'>
-        <a href=''>
+        <Link to='edify'>
           <img src={viteLogo} className='logo' alt='Vite logo' />
           <p className='font-bold text-xl text-inherit'>Edify</p>
-        </a>
-        <a href='/edify'>
+        </Link>
+        <Link to='edify'>
           <img src={whaleLogo} className='logo react' alt='React logo' />
           <p className='font-bold text-xl text-inherit'>Edify</p>
-        </a>
-        <a href='/nostalgia'>
+        </Link>
+        <Link to='nostalgia'>
           <img src={noteLogo} className='logo' alt='Nostalgia' />
           <p className='font-bold text-xl text-inherit'>Nostalgia</p>
-        </a>
+        </Link>
       </div>
     </div>
   );

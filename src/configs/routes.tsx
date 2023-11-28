@@ -28,7 +28,7 @@ const routes: RouteObject[] = [
       },
       {
         path: routePaths.nostalgia,
-        element: <HomePage />,
+        element: <Edify />,
       },
     ],
   },

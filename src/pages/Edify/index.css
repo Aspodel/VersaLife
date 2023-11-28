@@ -1,0 +1,13 @@
+.edify .func-item {
+  transition: all 0.3s ;
+}
+.edify .func-item:hover {
+  transform: scale(1.05);
+}
+.edify .func-item__overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.edify .func-item:hover .func-item__overlay {
+  opacity: 1;
+}
