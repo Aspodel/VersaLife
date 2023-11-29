@@ -8,8 +8,8 @@ import lockLogo from 'src/assets/book.svg';
 
 const edifyItem = [
   {
-    name: 'New Word',
-    path: 'new-word',
+    name: 'Vocabulary',
+    path: 'vocabulary',
     icon: flameLogo,
   },
   {
@@ -19,7 +19,7 @@ const edifyItem = [
   },
   {
     name: 'Idioms',
-    path: 'Idioms',
+    path: 'idioms',
     icon: bookMarkLogo,
   },
   {
@@ -35,7 +35,7 @@ const edifyItem = [
 ];
 function Edify() {
   return (
-    <div className='edify flex flex-col gap-unit-24 h-full w-full max-w-[1024px] mx-auto py-unit-32'>
+    <div className='edify flex flex-col gap-unit-32 h-full w-full max-w-[1024px] mx-auto py-unit-32'>
       <p className='font-bold text-5xl text-inherit'>
         <span className='text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-violet-700'>
           Let's learn

@@ -10,7 +10,7 @@ type FuncItemProps = {
 function FuncItem({ name, icon, path }: FuncItemProps) {
   const bgColor = (name: string) => {
     switch (name) {
-      case 'New Word':
+      case 'Vocabulary':
         return 'from-[#ed6f9e] to-[#fbc375]';
       case 'Quiz':
         return 'from-[#5770eb] to-[#3ed8fe9f]';

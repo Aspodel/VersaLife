@@ -3,12 +3,12 @@ import viteLogo from '/vite.svg';
 import noteLogo from 'src/assets/note.svg';
 import whaleLogo from 'src/assets/whale.svg';
 
-function HomePage() {
+function Home() {
   return (
     <div className='flex  flex-col gap-unit-24 h-full w-full max-w-[1024px] mx-auto py-unit-32'>
       <p className='font-bold text-5xl text-inherit'>
         Welcome back,{' '}
-        <span className='text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-violet-700'>
+        <span className='text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-pink-600'>
           Daniel
         </span>
       </p>
@@ -31,4 +31,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;
