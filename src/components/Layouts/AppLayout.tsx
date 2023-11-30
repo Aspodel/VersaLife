@@ -11,7 +11,7 @@ import { Link, Outlet } from 'react-router-dom';
 
 function AppLayout() {
   return (
-    <div className='flex flex-col w-full h-screen min-h-screen'>
+    <div className='flex flex-col w-full h-screen min-h-screen overflow-scroll'>
       <Navbar>
         <NavbarBrand className='gap-4'>
           <Link to='/'>

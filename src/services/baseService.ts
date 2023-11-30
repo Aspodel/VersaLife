@@ -32,7 +32,7 @@ export function BaseService<T extends IDTO<number | string>>({
   }
 
   async function update(item: T) {
-    await api.put(`${controllerPath}`, item);
+    await api.put(controllerPath, item);
   }
 
   async function remove(id: number | string) {

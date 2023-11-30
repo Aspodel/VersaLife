@@ -1,6 +1,7 @@
-import { Card, CardBody, CardHeader, Input } from '@nextui-org/react';
-import searchIcon from 'src/assets/icons/search.svg';
+import { Input } from '@nextui-org/react';
 import { data } from './data';
+import searchIcon from 'src/assets/icons/search.svg';
+import VocabularyCard from 'src/components/Edify/Vocabulary/VocabularyCard';
 
 function Vocabulary() {
   return (
@@ -25,15 +26,7 @@ function Vocabulary() {
 
       <div className='grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4 w-full'>
         {data.map((item, index) => (
-          <Card key={index} className='border-none w-full p-2' shadow='sm'>
-            <CardHeader className='pb-0'>
-              <p className='font-bold text-xl text-inherit'>{item.word}</p>
-            </CardHeader>
-
-            <CardBody className='pt-0'>
-              <p className='text-inherit'>{item.meaning}</p>
-            </CardBody>
-          </Card>
+          <VocabularyCard key={index} {...item} />
         ))}
       </div>
     </div>

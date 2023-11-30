@@ -13,7 +13,7 @@ export interface IAuthServiceModel {
 export function AuthService(): IAuthServiceModel {
   const controllerPath = 'Authentication';
   const [credential, setCredential] = React.useState(
-    getUserCredentialFromStorage()
+    getCredentialFromStorage()
   );
 
   function setNewCredentialInfor(newCredential?: ICredential) {
@@ -39,7 +39,7 @@ export function AuthService(): IAuthServiceModel {
   return { credential, login, register, logout };
 }
 
-function getUserCredentialFromStorage(): ICredential | undefined {
+function getCredentialFromStorage(): ICredential | undefined {
   const credential = localStorage.getItem(USER_CREDENTIAL);
   return credential ? JSON.parse(credential) : undefined;
 }
